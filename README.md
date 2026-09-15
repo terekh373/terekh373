@@ -53,7 +53,6 @@ TaskFlow is live at **[react-course-work-mu.vercel.app](https://react-course-wor
 | :-- | :-- | :-- |
 | IT STEP Computer Academy | Professional software development program | 2021 – 2026 |
 | Kharkiv University of Technology "STEP" | BSc, Information Systems and Technologies | 2025 – 2029 |
-| C++ Institute | CPA: Programming Essentials in C++ | |
 
 Languages: Ukrainian (native), English (B2), German (A2–B1).
 
