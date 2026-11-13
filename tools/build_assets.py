@@ -276,7 +276,7 @@ def header():
     # schematic: client -> api -> data
     by, bh = 222, 70
     box(sh, 58, by, 190, bh, "Angular / React", "SPA + JWT interceptor", tsize=16, label="CLIENT")
-    box(sh, 364, by, 212, bh, "ASP.NET Core 8", "REST, Clean Architecture", strong=True, tsize=16, label="API")
+    box(sh, 364, by, 212, bh, "ASP.NET Core 8", "REST, Identity, Swagger", strong=True, tsize=16, label="API")
     cylinder(sh, 692, by - 4, 150, bh + 8, "SQL Server", "PostgreSQL too", label="DATA")
     # request / response
     arrow(sh, f"M250 {by+22}H360")
@@ -300,7 +300,7 @@ def header():
     ty = 346
     sh.add(f'<path d="M26 {ty}H{W-26}" stroke="{C["line"]}" stroke-width="1.2" opacity=".75"/>')
     cells = [("LOCATION", "Kharkiv, Ukraine", 176), ("CORE STACK", "C#, .NET 8, ASP.NET Core", 232),
-             ("NOW", "Team lead on Vexa", 176), ("STUDY", "IT STEP, final year", 156), ("REV", "2026.09", 88)]
+             ("NOW", "Team lead on Vexa", 176), ("EDUCATION", "IT STEP, graduated", 156), ("REV", "2026.11", 88)]
     x = 26
     for i, (lab, val, cw) in enumerate(cells):
         if i:
@@ -314,12 +314,12 @@ def header():
 # ================================================================= VEXA (wide)
 def vexa():
     sh = Sheet(880, 292, "Vexa: online course marketplace. Team lead of 4 developers. "
-                         "NestJS, Prisma, PostgreSQL, Docker. 30 models, 22 enums.")
+                         "Express 5, TypeScript, Prisma, PostgreSQL, Docker. 33 tables, 21 enums. Defended 12 of 12.")
     sh.css.append(".pulse{animation:pulse 2.4s ease-in-out infinite}"
                   "@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}")
     paper(sh, 14)
     corners(sh)
-    card_head(sh, "Vexa", "Online course marketplace. Diploma project, in active development.")
+    card_head(sh, "Vexa", "Online course marketplace. Diploma project, defended 12/12.")
     tag(sh, sh.w - 28, 34, "TEAM LEAD, 4 DEVS", C["line"])
     tag(sh, sh.w - 158, 34, "IN PROGRESS", C["stamp"], dot=True)
 
@@ -347,16 +347,16 @@ def vexa():
     # legend
     ly = f2 + 8
     sh.add(f'<circle cx="{x0+4}" cy="{ly}" r="4.5" fill="{C["bg"]}" stroke="{C["line"]}" stroke-width="1.4"/>')
-    sh.text(x0 + 14, ly + 3.5, "every PR reviewed", "mono400", 9.5, C["dim"])
-    sh.text(x0 + 160, ly + 3.5, "2-week Scrum sprints", "mono400", 9.5, C["dim"])
+    sh.text(x0 + 14, ly + 3.5, "reviewed 40 of 43 team PRs", "mono400", 9.5, C["dim"])
+    sh.text(x0 + 162, ly + 3.5, "5 CI checks, 2-week sprints", "mono400", 9.5, C["dim"])
 
     # divider between halves
     sh.add(f'<path d="M424 104V222" stroke="{C["linedim"]}" stroke-width="1" stroke-dasharray="2 4"/>')
 
     # --- right: nest modules -> prisma -> postgres inside docker compose
     rx0 = 448
-    sh.text(rx0, gy, "NESTJS MODULES", "mono500", 9, C["linedim"], ls=1.2)
-    for i, m in enumerate(["auth", "courses", "enrollments"]):
+    sh.text(rx0, gy, "EXPRESS 5 API", "mono500", 9, C["linedim"], ls=1.2)
+    for i, m in enumerate(["auth + JWT", "orders, LiqPay", "learning"]):
         yy = gy + 12 + i * 30
         sh.add(f'<rect x="{rx0}" y="{yy}" width="112" height="22" rx="2" fill="{C["bg"]}" stroke="{C["linedim"]}" stroke-width="1.1"/>')
         sh.text(rx0 + 10, yy + 15, m, "mono400", 10.5, C["ink"])
@@ -373,9 +373,9 @@ def vexa():
     dy = gy + 118
     sh.add(f'<path d="M{dx+14} {dy}H{dx+226}" stroke="{C["linedim"]}" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)"/>')
     sh.add(f'<rect x="{dx+62}" y="{dy-8}" width="116" height="16" fill="{C["bg"]}"/>')
-    sh.text(dx + 120, dy + 3.5, "30 models, 22 enums", "mono500", 10, C["line"], anchor="middle")
+    sh.text(dx + 120, dy + 3.5, "33 tables, 21 enums", "mono500", 10, C["line"], anchor="middle")
 
-    card_foot(sh, ["TypeScript", "NestJS", "PostgreSQL", "Prisma", "Docker", "REST API", "Tech spec", "Scrum"], 250)
+    card_foot(sh, ["TypeScript", "Express 5", "Prisma", "PostgreSQL", "Redis", "React 19", "Docker", "GitHub Actions"], 250)
     sh.save("work-vexa.svg")
 
 
@@ -385,7 +385,7 @@ CARD_W, CARD_H = 430, 290
 
 def url_shortener():
     sh = Sheet(CARD_W, CARD_H, "URL Shortener: full-stack link shortener built solo. ASP.NET Core 8, "
-                               "Angular 17, EF Core, SQL Server, JWT, 11 unit tests with xUnit and Moq.")
+                               "Angular 21, EF Core, SQL Server, Identity, JWT, 13 tests with xUnit and Moq.")
     paper(sh); corners(sh)
     card_head(sh, "URL Shortener", "Full-stack link shortener, built solo.")
     tag(sh, CARD_W - 28, 34, "SOLO")
@@ -397,25 +397,25 @@ def url_shortener():
     arrow(sh, f"M297 {y+16}H278")
     box(sh, 168, y + 66, 86, 28, "Tests", tsize=12)
     arrow(sh, f"M211 {y+65}V{y+36}")
-    sh.text(28, y - 8, "CLEAN ARCHITECTURE", "mono500", 9, C["linedim"], ls=1.2)
+    sh.text(28, y - 8, "FOUR PROJECTS, LAYERED", "mono500", 9, C["linedim"], ls=1.2)
     # annotations
     sh.add(f'<path d="M152 {y+32}L130 {y+56}H40" fill="none" stroke="{C["linedim"]}" stroke-width="1"/>')
     sh.text(40, y + 70, "depends on nothing", "mono400", 9.5, C["dim"])
     sh.add(f'<path d="M255 {y+80}H290" stroke="{C["linedim"]}" stroke-width="1"/>')
-    sh.text(296, y + 78, "11 unit tests,", "mono400", 9.5, C["dim"])
-    sh.text(296, y + 91, "repo mocked", "mono400", 9.5, C["dim"])
-    card_foot(sh, ["ASP.NET Core 8", "Angular 17", "EF Core", "SQL Server", "JWT", "xUnit", "Moq"], 238)
+    sh.text(296, y + 78, "13 tests: EF", "mono400", 9.5, C["dim"])
+    sh.text(296, y + 91, "InMemory + Moq", "mono400", 9.5, C["dim"])
+    card_foot(sh, ["ASP.NET Core 8", "Angular 21", "EF Core", "SQL Server", "Identity", "xUnit", "Moq"], 238)
     sh.save("work-url-shortener.svg")
 
 
 def taskflow():
-    sh = Sheet(CARD_W, CARD_H, "TaskFlow: real-time Kanban board, live around the clock. React 18, Redux, "
+    sh = Sheet(CARD_W, CARD_H, "TaskFlow: real-time Kanban board, live around the clock. First of 5 course projects, built solo. React 18, Redux, "
                                "Node.js, Express, Socket.IO, MongoDB. Vercel, Render, MongoDB Atlas.")
     sh.css.append(".pulse{animation:pulse 2.4s ease-in-out infinite}"
                   "@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}"
                   ".ws{animation:flow 1.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-16}}")
     paper(sh); corners(sh)
-    card_head(sh, "TaskFlow", "Real-time Kanban board, online since launch.")
+    card_head(sh, "TaskFlow", "Real-time Kanban. 1st of 5 course projects, solo.")
     tag(sh, CARD_W - 28, 34, "LIVE 24/7", dot=True)
     y = 114
     box(sh, 28, y, 100, 38, "React 18", "Vercel", tsize=13, label="CLIENT")
@@ -477,14 +477,14 @@ def cryptotracker():
 
 
 def habitghost():
-    sh = Sheet(CARD_W, CARD_H, "HabitGhost: habit and goal tracker for Windows. First place in the IT STEP "
-                               "cohort. Team lead of 4. C#, WPF, TCP client-server, SQL Server.")
+    sh = Sheet(CARD_W, CARD_H, "HabitGhost: habit and goal tracker for Windows. First of 4 teams in the IT STEP "
+                               "cohort. Team lead of 4. My WinForms client talks over TCP to a teammate's server.")
     paper(sh); corners(sh)
     card_head(sh, "HabitGhost", "Habit and goal tracker for Windows.")
-    stamp(sh, 344, 60, 7, "1ST PLACE", "IT STEP COHORT", 124, 62, delay=0.6, size=15)
+    stamp(sh, 344, 60, 7, "1ST PLACE", "OF 4 TEAMS", 124, 62, delay=0.6, size=15)
     y = 118
-    box(sh, 28, y, 104, 36, "WPF client", "tray, autostart", tsize=13, label="ARCHITECTURE")
-    box(sh, 166, y, 104, 36, "TCP server", "sockets", strong=True, tsize=13)
+    box(sh, 28, y, 104, 36, "WinForms client", "mine", tsize=13, label="ARCHITECTURE")
+    box(sh, 166, y, 104, 36, "TCP server", "teammate's", strong=True, tsize=13)
     cylinder(sh, 306, y - 3, 96, 42, "SQL Server")
     sh.add(f'<path d="M134 {y+18}H162" stroke="{C["line"]}" stroke-width="1.3" marker-end="url(#ah)" marker-start="url(#ah)"/>')
     sh.add(f'<path d="M272 {y+18}H302" stroke="{C["linedim"]}" stroke-width="1.3" marker-end="url(#ahd)" marker-start="url(#ahd)"/>')
@@ -496,25 +496,26 @@ def habitghost():
         lead = i == 0
         sh.add(f'<circle cx="{cx}" cy="{ty}" r="8" fill="{C["line"] if lead else "none"}" stroke="{C["line"] if lead else C["linedim"]}" stroke-width="1.2"/>')
     sh.add(f'<path d="M36 {ty+10}V{ty+18}H48" fill="none" stroke="{C["linedim"]}" stroke-width="1"/>')
-    sh.text(52, ty + 21, "me: lead, UI/UX, models", "mono400", 9.5, C["dim"])
+    sh.text(52, ty + 21, "me: lead, client, models", "mono400", 9.5, C["dim"])
     sh.text(166, ty - 3, "habits, goals, analytics,", "mono400", 9.5, C["dim"])
     sh.text(166, ty + 10, "journal, reminders", "mono400", 9.5, C["dim"])
-    card_foot(sh, ["C#", ".NET", "WPF", "XAML", "SQL Server", "SSMS", "TCP/IP", "Git", "Agile"], 238)
+    card_foot(sh, ["C#", ".NET Framework", "WinForms", "TCP/IP", "SQL Server"], 238)
     sh.save("work-habitghost.svg")
 
 
 # ================================================================= STACK SHEET
 def stack():
     groups = [
-        ("Core", "what I ship with", ["C#", ".NET 8", "ASP.NET Core", "Web API", "EF Core", "LINQ",
-                                      "SQL Server", "PostgreSQL", "JWT"], "strong"),
-        ("Frontend", "the client side", ["Angular 17", "RxJS", "React 18", "Redux", "TypeScript",
-                                         "JavaScript", "HTML", "CSS"], "normal"),
-        ("Design & tests", "how it holds up", ["Clean Architecture", "SOLID", "MVVM", "Repository",
+        ("Core", "what I ship with", ["C#", ".NET 8", "ASP.NET Core Web API", "EF Core", "LINQ",
+                                      "MS SQL Server", "Identity", "JWT"], "strong"),
+        ("Frontend", "the client side", ["Angular", "RxJS", "React", "Redux", "TypeScript",
+                                         "JavaScript", "HTML", "CSS", "Bootstrap"], "normal"),
+        ("Design & tests", "how it holds up", ["OOP", "SOLID", "Clean Architecture", "MVVM", "Repository",
                                                "Dependency injection", "xUnit", "Moq"], "normal"),
-        ("Tools", "how it gets out", ["Git / GitHub", "Docker", "Azure", "CI/CD", "Agile / Scrum"], "normal"),
-        ("Also used", "in real projects", ["WPF", "WinForms", "Node.js", "NestJS", "Prisma", "MongoDB",
-                                           "Socket.IO", "C++", "Python"], "dim"),
+        ("Tools", "how it gets out", ["Git / GitHub", "GitHub Actions", "Docker", "Swagger / OpenAPI",
+                                      "Code review", "Agile / Scrum"], "normal"),
+        ("Also familiar", "used or studied", ["WPF", "WinForms", "Dapper", "PostgreSQL", "Node.js / Express",
+                                              "Prisma", "Redis", "MongoDB", "C / C++", "Python"], "dim"),
     ]
     W = 880
     label_w = 150
@@ -526,9 +527,9 @@ def stack():
         rows_layout.append((g, rows, y))
         y += max(len(rows) * 30, 44) + 20
     H = y + 6
-    sh = Sheet(W, H, "Toolbox. Core: C#, .NET 8, ASP.NET Core, REST, EF Core, LINQ, SQL Server, PostgreSQL, JWT. "
+    sh = Sheet(W, H, "Toolbox. Core: C#, .NET 8, ASP.NET Core Web API, EF Core, LINQ, MS SQL Server, Identity, JWT. "
                      "Frontend: Angular, RxJS, React, Redux, TypeScript. Design and tests: Clean Architecture, SOLID, "
-                     "MVVM, xUnit, Moq. Tools: Git, Docker, Azure, CI/CD, Scrum.")
+                     "MVVM, xUnit, Moq. Tools: Git, GitHub Actions, Docker, Swagger, Scrum.")
     paper(sh, 14); corners(sh)
     sh.text(28, 30, "BILL OF MATERIALS", "mono500", 9, C["linedim"], ls=1.4)
     for idx, (g, rows, y0) in enumerate(rows_layout):

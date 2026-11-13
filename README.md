@@ -6,29 +6,29 @@
 
 <p>
   <a href="https://anton-portfolio-ten.vercel.app/"><img src="assets/btn-portfolio.svg" height="36" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/anton-tereshchenko-o/"><img src="assets/btn-linkedin.svg" height="36" alt="LinkedIn"></a>
-  <a href="mailto:terekh.anton.08@gmail.com"><img src="assets/btn-email.svg" height="36" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/anton-e-tereshchenko/"><img src="assets/btn-linkedin.svg" height="36" alt="LinkedIn"></a>
+  <a href="mailto:anton.e.tereshchenko@gmail.com"><img src="assets/btn-email.svg" height="36" alt="Email"></a>
   <a href="https://anton-portfolio-ten.vercel.app/cv/Tereshchenko_Anton_Resume_EN.pdf"><img src="assets/btn-cv.svg" height="36" alt="Résumé, PDF"></a>
 </p>
 
-I build backends in C# and ASP.NET Core, plus the Angular or React client that talks to them. I like systems that have to stay correct, not just work once. Right now I'm in my final year at IT STEP, leading a four-developer team on **Vexa**, and looking for my first commercial role.
+I write backends in C# and ASP.NET Core and the Angular or React client on top of them. In October I graduated from IT STEP Academy; the diploma project was **Vexa**, a course marketplace where I led four developers, wrote the 55-page spec and reviewed 40 of 43 of my teammates' pull requests. Now looking for my first commercial role.
 
 ## Selected work
 
 Each project is drawn as its own system. Click a sheet to open the repository.
 
 <p>
-  <a href="https://github.com/terekh373/Vexa"><img src="assets/work-vexa.svg" width="100%" alt="Vexa: online course marketplace. I lead a team of four: tech spec, REST API design, PostgreSQL schema with 30 models and 22 enums, PR review, two-week sprints. NestJS, Prisma, PostgreSQL, Docker."></a>
+  <a href="https://github.com/terekh373/Vexa"><img src="assets/work-vexa.svg" width="100%" alt="Vexa: online course marketplace, diploma project defended 12 of 12. I lead a team of four developers: tech spec, database schema with 33 tables and 21 enums, auth, payments, CI with five required checks, review of 40 of 43 team PRs. Express 5, TypeScript, Prisma, PostgreSQL, Redis, React 19, Docker, GitHub Actions."></a>
 </p>
 
 <p>
-  <a href="https://github.com/terekh373/urlshortener-aspnet-angular"><img src="assets/work-url-shortener.svg" width="49.5%" alt="URL Shortener: ASP.NET Core 8 API and Angular 17 client, built solo. Clean Architecture, Identity and JWT roles, 11 unit tests with xUnit and Moq."></a>
-  <a href="https://github.com/terekh373/React_CourseWork"><img src="assets/work-taskflow.svg" width="49.5%" alt="TaskFlow: real-time Kanban board. React, Redux, Express, Socket.IO, MongoDB. Live on Vercel, Render and MongoDB Atlas."></a>
+  <a href="https://github.com/terekh373/urlshortener-aspnet-angular"><img src="assets/work-url-shortener.svg" width="49.5%" alt="URL Shortener: ASP.NET Core 8 API and Angular 21 client, built solo. Four projects: API, Core, Infrastructure, Tests. Identity and JWT roles, 13 tests with xUnit, EF Core InMemory and Moq."></a>
+  <a href="https://github.com/terekh373/React_CourseWork"><img src="assets/work-taskflow.svg" width="49.5%" alt="TaskFlow: real-time Kanban board, first of 5 course projects, built solo. React, Redux, Express, Socket.IO, MongoDB. Live on Vercel, Render and MongoDB Atlas."></a>
   <a href="https://github.com/terekh373/crypto-tracker-wpf"><img src="assets/work-cryptotracker.svg" width="49.5%" alt="CryptoTracker: WPF desktop app on .NET 8 with strict MVVM, LiveCharts price history and a converter, powered by the CoinGecko API."></a>
-  <a href="https://github.com/terekh373/HabitGhost_Csharp_dotNET"><img src="assets/work-habitghost.svg" width="49.5%" alt="HabitGhost: habit and goal tracker for Windows, first place in the IT STEP cohort. I led a team of four. WPF client, TCP server, SQL Server."></a>
+  <a href="https://github.com/terekh373/HabitGhost_Csharp_dotNET"><img src="assets/work-habitghost.svg" width="49.5%" alt="HabitGhost: habit and goal tracker for Windows, first of 4 teams in the IT STEP cohort. I led a team of four and built the WinForms client; it talks over TCP to a teammate's server on SQL Server."></a>
 </p>
 
-TaskFlow is live at **[react-course-work-mu.vercel.app](https://react-course-work-mu.vercel.app)**. The reasoning behind each architecture is in the case studies on [my site](https://anton-portfolio-ten.vercel.app/#work).
+TaskFlow is live at **[react-course-work-mu.vercel.app](https://react-course-work-mu.vercel.app)**. The jury at the Vexa defense called it the strongest project in the last couple of years; the demo is on [YouTube](https://youtu.be/1U90UNY5lus). More on how each one is built is on [my site](https://anton-portfolio-ten.vercel.app/#work).
 
 <details>
 <summary><b>Smaller projects</b></summary>
@@ -45,15 +45,15 @@ TaskFlow is live at **[react-course-work-mu.vercel.app](https://react-course-wor
 
 ## Toolbox
 
-<img src="assets/stack.svg" width="100%" alt="Core: C#, .NET 8, ASP.NET Core, Web API, EF Core, LINQ, SQL Server, PostgreSQL, JWT. Frontend: Angular 17, RxJS, React 18, Redux, TypeScript, JavaScript, HTML, CSS. Design and tests: Clean Architecture, SOLID, MVVM, Repository, Dependency injection, xUnit, Moq. Tools: Git, Docker, Azure, CI/CD, Agile and Scrum. Also used: WPF, WinForms, Node.js, NestJS, Prisma, MongoDB, Socket.IO, C++, Python.">
+<img src="assets/stack.svg" width="100%" alt="Core: C#, .NET 8, ASP.NET Core Web API, EF Core, LINQ, MS SQL Server, Identity, JWT. Frontend: Angular, RxJS, React, Redux, TypeScript, JavaScript, HTML, CSS, Bootstrap. Design and tests: OOP, SOLID, Clean Architecture, MVVM, Repository, Dependency injection, xUnit, Moq. Tools: Git and GitHub, GitHub Actions, Docker, Swagger and OpenAPI, code review, Agile and Scrum. Also familiar: WPF, WinForms, Dapper, PostgreSQL, Node.js and Express, Prisma, Redis, MongoDB, C and C++, Python.">
 
 ## Background
 
 | Where | What | When |
 | :-- | :-- | :-- |
-| IT STEP Computer Academy | Professional software development program | 2021 – 2026 |
-| Kharkiv University of Technology "STEP" | BSc, Information Systems and Technologies | 2025 – 2029 |
+| IT STEP Computer Academy | Software development diploma, average 11.8 of 12 | 2022 – 2026 |
+| Kharkiv University of Technology "STEP" | BSc, Information Systems and Technologies (F6), in progress | 2025 – 2029 |
 
 Languages: Ukrainian (native), English (B2), German (A2–B1).
 
-Open to remote and outstaff roles across Europe and the US. The fastest way to reach me is email: **terekh.anton.08@gmail.com**
+Open to remote and outstaff roles, or an office in Kharkiv. Email is the fastest way to reach me: **anton.e.tereshchenko@gmail.com**
